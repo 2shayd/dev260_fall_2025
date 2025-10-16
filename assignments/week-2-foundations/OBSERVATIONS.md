@@ -1,0 +1,1 @@
+I was unable to compare the times from the benchmarks to my predictions becasue I was unable to complete and figure out the benchmarks program. I couldn't really figure out how to do what the instructions asked for. Its very confusing to me so I am hoping to discuss with you further if I can't figure it out but I ran out of time for this assingment.
