@@ -1,0 +1,15 @@
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/bin/Debug/net9.0/Week3ArraysSorting
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/bin/Debug/net9.0/Week3ArraysSorting.deps.json
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/bin/Debug/net9.0/Week3ArraysSorting.runtimeconfig.json
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/bin/Debug/net9.0/Week3ArraysSorting.dll
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/bin/Debug/net9.0/Week3ArraysSorting.pdb
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/Week3ArraysSorting.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/Week3ArraysSorting.AssemblyInfoInputs.cache
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/Week3ArraysSorting.AssemblyInfo.cs
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/Week3ArraysSorting.csproj.CoreCompileInputs.cache
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/Week3ArraysSorting.sourcelink.json
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/Week3ArraysSorting.dll
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/refint/Week3ArraysSorting.dll
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/Week3ArraysSorting.pdb
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/Week3ArraysSorting.genruntimeconfig.cache
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-3-arrays-sorting/Week3ArraysSorting/obj/Debug/net9.0/ref/Week3ArraysSorting.dll
