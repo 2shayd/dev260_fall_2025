@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LabQueues")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e91b5d11acc7f4992a736b994d8ae074a1917f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a95ca164d3984b4f2204cf047d0c21b8adffe66b")]
 [assembly: System.Reflection.AssemblyProductAttribute("LabQueues")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LabQueues")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
