@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabQueues", "LabQueues\LabQueues.csproj", "{87FB5FDC-F656-9FF5-1CED-A6102F3DBCB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueLab", "QueueLab.csproj", "{375110E0-0273-4856-8BB5-99FA3652BA90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +10,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{87FB5FDC-F656-9FF5-1CED-A6102F3DBCB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87FB5FDC-F656-9FF5-1CED-A6102F3DBCB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87FB5FDC-F656-9FF5-1CED-A6102F3DBCB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87FB5FDC-F656-9FF5-1CED-A6102F3DBCB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{375110E0-0273-4856-8BB5-99FA3652BA90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{375110E0-0273-4856-8BB5-99FA3652BA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{375110E0-0273-4856-8BB5-99FA3652BA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{375110E0-0273-4856-8BB5-99FA3652BA90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E1888E89-21DB-40D1-8395-AFCAECB86A14}
+		SolutionGuid = {398D03A3-9318-4D2C-ABF0-5BE2281DDE51}
 	EndGlobalSection
 EndGlobal
