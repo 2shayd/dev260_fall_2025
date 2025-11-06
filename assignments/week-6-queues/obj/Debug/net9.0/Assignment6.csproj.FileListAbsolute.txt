@@ -1,0 +1,15 @@
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/bin/Debug/net9.0/Assignment6
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/bin/Debug/net9.0/Assignment6.deps.json
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/bin/Debug/net9.0/Assignment6.runtimeconfig.json
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/bin/Debug/net9.0/Assignment6.dll
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/bin/Debug/net9.0/Assignment6.pdb
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/Assignment6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/Assignment6.AssemblyInfoInputs.cache
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/Assignment6.AssemblyInfo.cs
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/Assignment6.csproj.CoreCompileInputs.cache
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/Assignment6.sourcelink.json
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/Assignment6.dll
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/refint/Assignment6.dll
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/Assignment6.pdb
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/Assignment6.genruntimeconfig.cache
+/Users/shaylarohrer/dev260_fall_2025/assignments/week-6-queues/obj/Debug/net9.0/ref/Assignment6.dll
