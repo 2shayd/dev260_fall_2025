@@ -1,0 +1,15 @@
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/bin/Debug/net9.0/lab-8-sets
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/bin/Debug/net9.0/lab-8-sets.deps.json
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/bin/Debug/net9.0/lab-8-sets.runtimeconfig.json
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/bin/Debug/net9.0/lab-8-sets.dll
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/bin/Debug/net9.0/lab-8-sets.pdb
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/lab-8-sets.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/lab-8-sets.AssemblyInfoInputs.cache
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/lab-8-sets.AssemblyInfo.cs
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/lab-8-sets.csproj.CoreCompileInputs.cache
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/lab-8-sets.sourcelink.json
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/lab-8-sets.dll
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/refint/lab-8-sets.dll
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/lab-8-sets.pdb
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/lab-8-sets.genruntimeconfig.cache
+/Users/shaylarohrer/dev260_fall_2025/labs/lab_8_hashsets/obj/Debug/net9.0/ref/lab-8-sets.dll
