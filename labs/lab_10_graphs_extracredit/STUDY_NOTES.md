@@ -92,7 +92,7 @@ Answer:
 
 ## Time Spent
 
-**Total time:** [X hours] started at 3pm
+**Total time:** [X hours] started at 3pm -5pm, 
 
 **Breakdown:**
 

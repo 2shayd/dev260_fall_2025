@@ -12,7 +12,7 @@ public class Program
         try
         {
             //initialize tarot reading
-            var tarotReading = new TarotReading();
+            var tarotReading = new TarotReading("", new List<TarotReading.TarotCard>());
 
             //load tarot cards from csv file
             Console.WriteLine("Loading tarot cards from CSV...");

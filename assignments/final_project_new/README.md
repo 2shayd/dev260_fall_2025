@@ -78,9 +78,9 @@ _List each data structure and briefly explain what feature it powers._
 
 **Your Answer:**
 
-- `Dictionary<...>` →
-- `List<...>` →
-- `HashSet<...>` →
+- `Dictionary<...>` → A Dictionary is the ideal data structure for fast card lookup by name. Since the user may search by card name (e.g., “four of cups”), the dictionary provides O(1) average-time performance for retrieving a card when the name is known or normalized. This makes it significantly more efficient than searching through a list or array, which would require O(n) linear time for each lookup.
+- `List<...>` → A List is the simplest and most efficient structure for storing the full set of cards exactly as they are loaded from the CSV file. It allows fast iteration, preserves the natural deck order, and supports random drawing with O(1) index access.
+- `Queue<...>` → A Queue was chosen to store the last three spreads because it naturally provides FIFO behavior, which aligns perfectly with maintaining a fixed-size history. When a new spread is added, it is enqueued at the back, and if the queue exceeds three items, the oldest spread is automatically removed using Dequeue(). Both operations run in O(1) time. This makes Queue a clean, efficient, and minimal-overhead solution for tracking a rolling history of recent spreads.
 - _(Add others: Queue, Stack, SortedDictionary, custom BST/Graph, etc.)_
 
 ---
