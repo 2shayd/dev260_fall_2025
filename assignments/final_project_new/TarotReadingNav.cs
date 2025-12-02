@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Formats.Tar;
 using System.Linq;
 
 public class TarotReadingNav(TarotReading tarotReading)
@@ -29,14 +30,19 @@ public class TarotReadingNav(TarotReading tarotReading)
                     break;
                 case "4":
                     Console.WriteLine("You selected: Search card by name");
-                    // Implement search card by name logic here
+                    Console.Write("Enter card name to search: ");
+                    tarotReading.SearchCardByName(name: Console.ReadLine() ?? "");
                     break;
                 case "5":
+                    Console.WriteLine("You selected: View reading history (last 3 readings)");
+                    tarotReading.ViewHistory();
+                    break;
+                case "6":
                     Console.WriteLine("Exiting the Tarot Reader. Goodbye!");
                     running = false;
                     break;
                 default:
-                    Console.WriteLine("Invalid choice. Please enter a number between 1 and 5.");
+                    Console.WriteLine("Invalid choice. Please enter a number between 1 and 6.");
                     break;
             }
             if (running)
@@ -64,10 +70,11 @@ public class TarotReadingNav(TarotReading tarotReading)
         Console.WriteLine(" 2) Draw a 3-card spread (Past/Present/Future)");
         Console.WriteLine(" 3) List all cards");
         Console.WriteLine(" 4) Search card by name");
-        Console.WriteLine(" 5) Quit\n");
+        Console.WriteLine(" 5) View reading history (last 3 readings)");
+        Console.WriteLine(" 6) Quit\n");
 
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.Write("Enter choice (1-5): ");
+        Console.Write("Enter choice (1-6): ");
         Console.ResetColor();
     }
 }
