@@ -355,6 +355,17 @@ namespace Assignment10
         /// <returns>Sorted list of reachable airport codes</returns>
         public List<string> GetDestinationsFrom(string origin)
         {
+            if (string.IsNullOrWhiteSpace(origin))
+            {
+                return new List<string>(); // return empty list for invalid input
+            }
+
+            string originUpper = origin.ToUpperInvariant();
+            
+            if (!routes.ContainsKey(originUpper))
+            {
+                return new List<string>(); // return empty list if origin has no flights
+            }
             // TODO ASSIGNMENT: Implement destination listing
             // Hint: Similar validation as FindDirectFlights
             // Hint: Use .Select(f => f.Destination) to get destination codes
@@ -431,20 +442,62 @@ namespace Assignment10
         /// <returns>List of airport codes in route order, or null if no route exists</returns>
         public List<string>? FindRoute(string origin, string destination)
         {
-            // TODO ASSIGNMENT: Implement BFS pathfinding
-            // Hint: Validate inputs (null/empty check)
-            // Hint: Convert to uppercase and verify airports exist in graph
-            // Hint: Handle special case: if origin == destination, return single-element list
-            // Hint: Create Queue<string>, HashSet<string> visited, Dictionary<string, string> parents
-            // Hint: Enqueue origin, mark as visited
-            // Hint: While loop: while (queue.Count > 0)
-            // Hint: Dequeue current airport
-            // Hint: Check if current == destination, if so call ReconstructPath() helper
-            // Hint: Loop through routes[current] to explore neighbors
-            // Hint: For each unvisited neighbor: mark visited, record parent, enqueue
-            // Hint: Return null if queue empties without finding destination
-            
-            throw new NotImplementedException("FindRoute method not yet implemented");
+            //guard clause for inputs
+            if (string.IsNullOrWhiteSpace(origin) || string.IsNullOrWhiteSpace(destination))
+            {
+                return null; // Invalid input
+            }
+
+            string originUpper = origin.ToUpperInvariant();
+            string destinationUpper = destination.ToUpperInvariant();
+
+            if (!airports.ContainsKey(originUpper) || !airports.ContainsKey(destinationUpper))
+            {
+                return null; // One or both airports do not exist
+            }
+
+            if (originUpper == destinationUpper)
+            {
+                return new List<string> { originUpper }; // Special case: same airport
+            }
+
+            //initialize BFS structures
+            Queue<string> queue = new Queue<string>();
+            HashSet<string> visited = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            Dictionary<string, string> parents = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+            //start BFS from origin
+            queue.Enqueue(originUpper);
+            visited.Add(originUpper);
+
+            while(queue.Count > 0)
+            {
+                string current = queue.Dequeue();
+
+                //check if destination reached
+                if (current.Equals(destinationUpper, StringComparison.OrdinalIgnoreCase))
+                {
+                    //use helper to reconstruct path
+                    return ReconstructPath(parents, originUpper, destinationUpper);
+                }
+
+                //explore neighbors (outgoing flights)
+                if (routes.ContainsKey(current))
+                {
+                    foreach (Flight flight in routes[current])
+                    {
+                        string neighbor = flight.Destination.ToUpperInvariant();
+
+                        if (!visited.Contains(neighbor))
+                        {
+                            visited.Add(neighbor);
+                            parents[neighbor] = current; //track parent for how we reached this neighbor/vertice/airport
+                            queue.Enqueue(neighbor); //add to the exploration queue
+                        }
+                    }
+                }
+            }
+            return null; // No route found
         }
 
         /// <summary>

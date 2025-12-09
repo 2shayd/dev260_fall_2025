@@ -1,71 +1,82 @@
-# Project Title
+# Tarot Reading Console App
 
-> One-sentence summary of what this app does and who it's for.
+> This app is a tarot reading simulation.
+
+>_Tarot reading is a practice where a person uses a special deck of picture cards to help talk about life questions, feelings, or situations. The cards are drawn at random, and each one has a meaning that the reader explains. People often use tarot to reflect on their own thoughts, understand problems better, or think about possible outcomes in their life._
+
 
 ---
-
 ## What I Built (Overview)
 
-**Problem this solves:**  
-_Explain the real-world task your app supports and why it's useful (2–4 sentences)._
+**Problem this solves:** 
 
-**Your Answer:**
+Tarot reading can be considered a taboo thing in many different cultures and religions. It is an art that holds a lot of meaning for certain people. This app allows a person to experience a tarot reading without owning a tarot deck or needing to be read by another person, allowing for a personal and private experience.
 
+---
 **Core features:**  
-_List the main features your application provides (Add, Search, List, Update, Delete, etc.)_
 
-**Your Answer:**
-
--
--
--
--
+- 1 card (daily) spread
+- 3 card (past, present, future) spread
+- List all cards
+- Search cards by name
+- Save previous 3 readings to review
+- Update card meanings to reflect personal preference
 
 ## How to Run
 
 **Requirements:**  
-_List required .NET version, OS requirements, and any dependencies._
+- .NET 9.0 SDK (target framework: `net9.0`). Verify with `dotnet --version` (needs 9.x).  
+- Cross-platform: Windows, macOS, Linux — console app; tested on macOS.  
+- NuGet package: `CsvHelper` v`33.1.0` (used to parse `Data/cards.csv`). This is restored automatically by `dotnet restore`.  
+- Data file: `Data/cards.csv` must exist and be readable at runtime.  
+- Tools: `git` (optional) and the `dotnet` CLI (required).
 
-**Your Answer:**
+**Install / Build / Run:**
 
 ```bash
 git clone <your-repo-url>
-cd <your-folder>
+cd final_project_new
+dotnet restore
 dotnet build
-```
-
-**Run:**  
-_Provide the command to run your application._
-
-**Your Answer:**
-
-```bash
 dotnet run
 ```
 
-**Sample data (if applicable):**  
-_Describe where sample data lives and how to load it (e.g., JSON file path, CSV import)._
+**Optional (manual package install):**
 
-**Your Answer:**
+```bash
+dotnet add package CsvHelper --version 33.1.0
+dotnet restore
+```
+
+**Sample data (tarot card deck):**  
+- The app reads card data from `Data/cards.csv`. The CSV should include headers matching the `TarotReading.TarotCard` properties (`Name,Meaning,ReversedMeaning`).  
+- If `Data/cards.csv` is missing or empty, the program will print an error and won't run spreads.
 
 ---
 
 ## Using the App (Quick Start)
 
 **Typical workflow:**  
-_Describe the typical user workflow in 2–4 steps._
 
-**Your Answer:**
-
-1.
-2.
-3.
-4.
+1. Select a spread option (1-card) or (3-card)
+2. Read meanings of the cards drawn for the chosen spread
+3. Review previous readings as needed
+4. Search cards by name to see both meaning and reversed meaning
 
 **Input tips:**  
-_Explain case sensitivity, required fields, and how common errors are handled gracefully._
-
-**Your Answer:**
+- **Case sensitivity:** Input is NOT case sensitive. "FOUR OF CUPS", "Four Of Cups", and "four of cups" are all treated identically.
+- **Automatic normalization:** For card searches, input is automatically normalized:
+  - Whitespace is trimmed and collapsed (extra spaces removed).
+  - Numeric card names are converted to words (e.g., "4 of cups" → "four of cups", "11" → "page").
+  - This allows flexible search patterns without user worry.
+- **Required fields:** The app has no required input fields for spread draws (menu choices 1, 2). Card searches (menu choice 4) require a card name, but if empty or not found, the app prints "Card '[name]' not found." and continues gracefully.
+- **Error handling:**
+  - **Invalid menu choice:** If you enter a number outside 1–6 or non-numeric input, the app prints "Invalid choice. Please enter a number between 1 and 6." and loops back to the menu.
+  - **Missing CSV file:** If `Data/cards.csv` does not exist, the app prints an error message and prevents spreads from running (returns early).
+  - **Empty CSV file:** If the CSV is empty, spreads fail gracefully with "No cards available for a spread."
+  - **Card not found:** Searching for a card that doesn't exist returns "Card '[name]' not found.\n" without crashing.
+  - **Null/empty input on search:** Empty string input for card search is normalized to an empty string and won't match any card, returning the "not found" message.
+- **No data loss:** All operations are read-only except reading history. Previous readings are preserved in the queue until the app closes (not persisted to disk).
 
 ---
 
